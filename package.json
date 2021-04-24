@@ -2,12 +2,17 @@
   "name": "Schedule",
   "version": "1.0.0",
   "main": "index.js",
+<<<<<<< HEAD
   "scripts": {
     "build": "tsc",
     "dev": "ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_modules src/shared/infra/server.ts",
     "start": "ts-node src/index.ts",
     "test": "jest"
   },
+=======
+  "type":"module",
+  "scripts": {"dev": " "},
+>>>>>>> 806591dd9a54a217e2082d82696d8d76e8a97734
   "license": "MIT",
   "dependencies": {
     "@types/express": "^4.17.11",
