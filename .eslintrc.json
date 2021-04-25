@@ -3,6 +3,9 @@
       "es2021": true,
       "node": true
   },
+  "globals": {
+    "Atomics": "readonly",
+  },
   "extends": [
       "plugin:prettier/recommended",
       "airbnb-base",
@@ -35,10 +38,8 @@
       ]
   },
   "settings": {
-      "import/resolver": {
-          "node": {
-            "extensions": [".js", ".jsx", ".ts", ".tsx"]
-          }
-      }
+    "import/resolver": {
+      "typescript": {}
+    }
   }
 }
