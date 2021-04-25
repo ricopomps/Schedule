@@ -18,8 +18,9 @@
     "prettier"
   ],
   "rules": {
+    "semi": "off",
     "import/no-unresolved": 0,
-    "class-methods-use-this":"off",
+    "class-methods-use-this": "off",
     "linebreak-style": 0,
     "prettier/prettier": [
       "error",
