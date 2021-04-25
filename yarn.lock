@@ -5322,14 +5322,13 @@ tsutils@^3.17.1:
   dependencies:
     tslib "^1.8.1"
 
-<<<<<<< HEAD
 tsyringe@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/tsyringe/-/tsyringe-4.5.0.tgz#fc88cbab57deac47a2a2033bbca94c96d3c2702a"
   integrity sha512-XvYgdUxkmGQfpCkKyr/ybJx71OLSnNec1SO0xdohMjaS2UOEyKi76YfKx92XUXgc1TocypHENg6y4wCyYyMKag==
   dependencies:
     tslib "^1.9.3"
-=======
+
 tunnel-agent@^0.6.0:
   version "0.6.0"
   resolved "https://registry.yarnpkg.com/tunnel-agent/-/tunnel-agent-0.6.0.tgz#27a5dea06b36b04a0a9966774b290868f0fc40fd"
@@ -5341,7 +5340,6 @@ tweetnacl@^0.14.3, tweetnacl@~0.14.0:
   version "0.14.5"
   resolved "https://registry.yarnpkg.com/tweetnacl/-/tweetnacl-0.14.5.tgz#5ae68177f192d4456269d108afa93ff8743f4f64"
   integrity sha1-WuaBd/GS1EViadEIr6k/+HQ/T2Q=
->>>>>>> 7543e5c6790a76755f5fbcc2dcc7356837b6e91f
 
 type-check@^0.4.0, type-check@~0.4.0:
   version "0.4.0"
