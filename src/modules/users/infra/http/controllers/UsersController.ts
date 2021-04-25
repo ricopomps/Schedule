@@ -1,5 +1,7 @@
 class UsersControllers {
-  public async create(req) {
+  public async create(request) {
+    const { name } = request.body;
+
     return { statusCode: 200, body: '' };
   }
 }
