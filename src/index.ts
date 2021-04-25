@@ -1,9 +1,9 @@
 import 'reflect-metadata';
 import express, { Request, Response, NextFunction } from 'express';
 import { errors } from 'celebrate';
-import AppError from '@shared/errors/AppError';
 import cors from 'cors';
 import dotenv from 'dotenv';
+import AppError from '';
 
 const app = express();
 dotenv.config();
