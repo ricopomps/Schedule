@@ -3,7 +3,7 @@ import express, { Request, Response, NextFunction } from 'express';
 import { errors } from 'celebrate';
 import cors from 'cors';
 import dotenv from 'dotenv';
-import AppError from '';
+import AppError from '@shared/errors/AppError';
 
 const app = express();
 dotenv.config();
