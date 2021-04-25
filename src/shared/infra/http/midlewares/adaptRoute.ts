@@ -1,8 +1,8 @@
 import { Request, Response } from 'express';
 
 const adaptRoute = (controllerFunciton: any) => async (
-  req: Request,
-  res: Response,
+  request: Request,
+  response: Response,
 ) => {
   const httpRequest: HttpRequest = {
     user: req?.user,
