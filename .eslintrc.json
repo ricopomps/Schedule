@@ -21,6 +21,7 @@
     "semi": "off",
     "import/no-unresolved": 0,
     "class-methods-use-this": "off",
+    "no-useless-constructor": "off",
     "linebreak-style": 0,
     "prettier/prettier": [
       "error",
