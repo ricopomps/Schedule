@@ -4,7 +4,7 @@ interface IRequest {
   user: string;
   password: string;
 }
-interface Response {
+interface IResponse {
   user: User;
   token: string;
 }
