@@ -11,8 +11,8 @@ interface IRequest {
   password: string;
 }
 interface IResponse {
-  user: User;
-  token: string;
+  checkIfuserExists: User;
+  token?: string;
 }
 
 @injectable()
@@ -26,15 +26,23 @@ class AuthenticateUserService {
   ) {}
 
   public async run({ user, password }: IRequest): Promise<IResponse> {
-    const users = await this.usersRepository.findByUser(user);
-    if (!users) {
+    const checkIfuserExists = await this.usersRepository.findByUser(user);
+    if (!checkIfuserExists) {
       throw new AppError('Incorrect Email or password.', 401);
     }
 
-    const CheckPassword = await this.hashProvider.compareHash(
+    const checkPassword = await this.hashProvider.compareHash(
       password,
-      users.password,
+      checkIfuserExists.password,
     );
+
+    if (!checkPassword) {
+      throw new AppError('Incorrect email od password.', 401);
+    }
+
+    return {
+      checkIfuserExists,
+    };
   }
 }
 export default AuthenticateUserService;
