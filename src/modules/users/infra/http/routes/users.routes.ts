@@ -5,3 +5,5 @@ import UsersControllers from '@module/users/infra/http/controllers/UsersControll
 const usersRouter = Router();
 
 usersRouter.post('/', adaptRoute(UsersControllers.index));
+
+export default usersRouter;
